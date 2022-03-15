@@ -1,0 +1,324 @@
+/* UTILITIES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+   --barlow : 'Barlow', sans-serif;
+   --fraunces : 'Fraunces', serif;
+}
+
+
+body{
+    font-family: var(--fraunces);
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-right-flex{
+    font-family: var(--barlow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 9rem 0 8.3rem;
+    background-color: hsla(206, 4%, 67%, 0.144);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secondry-header{
+    font-size: 2.5rem;
+    font-family: var(--fraunces);
+}
+
+.section-2 p, .section-3 p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: hsl(232, 10%, 55%);
+    line-height: 1.8;
+    margin: 2.8rem 0;
+}
+
+.section-button{
+    font-family: var(--fraunces);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    width: 25%;
+    word-spacing: 0.2rem;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.section-2-button::after{
+    content: '';
+    position: absolute;
+    width: 93%;
+    height: 40%;
+    background-color: hsla(51, 100%, 49%, 0.404);
+    border-radius: 1rem;
+    bottom: -0.1rem;
+    left: 0.2rem;
+    z-index: -1;
+}
+
+.section-3-button::after{
+    content: '';
+    position: absolute;
+    width: 93%;
+    height: 40%;
+    background-color:  hsl(7, 99%, 70%);
+    border-radius: 1rem;
+    bottom: -0.1rem;
+    left: 0.2rem;
+    z-index: -1;
+}
+
+
+/* SECTION - 1 */
+
+.section-1{
+    background-image: url(images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-1-navigation{
+    margin: 3rem auto 0 auto;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.logo{
+    transform: scale(1.4);
+    margin: auto 0 auto 4%;
+}
+
+.nav-ul{
+    font-family: var(--barlow);
+    font-weight: 600;
+    list-style: none;
+    width: 33%;
+    font-size: 1.1rem;
+    margin: 0 3.5rem 0 0;
+    height: 100%;
+}
+
+.nav-ul li{
+    cursor: pointer;
+}
+
+.contact{
+    font-family: var(--fraunces);
+    border: none;
+    border-radius: 2rem;
+    padding: 4% 5%;
+    background-color: #fff;
+    color: #000;
+}
+
+.contact:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.section-1 .heading{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    margin-top: 4.5rem;
+}
+
+.section-1 .down-arrow{
+    position: absolute;
+    top: 45%;
+    left: 49%;
+}
+
+/* ------------------------------------ */
+/* SECTION-2 */
+
+.section-2-right{
+    overflow: hidden;
+}
+.section-2-right .egg{
+    height: 100%;
+}
+
+/* -------------------------------------- */
+/*  SEVTION -3 */
+
+.section-3-left,.section-3-right{
+    overflow: hidden;
+}
+
+.section-3-left .glass{
+    height: 100%;
+}
+
+
+/* --------------------------------------- */
+/*   SECTION - 4 */
+
+
+.cherry-box{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+}
+
+
+.orange-box{
+    background-image: url(images/desktop/image-photography.jpg);
+}
+
+.cherry-box, .orange-box{
+    background-size: cover;
+    flex-direction: column;
+}
+
+.cherry-box .section-4-h4{
+    color: hsl(167, 40%, 24%);
+}
+
+.orange-box .section-4-h4{
+    color: hsl(198, 62%, 26%);
+}
+.section-4-h4{
+    font-size: 1.7rem;
+    margin: 25rem 0 2rem 0;
+}
+
+.section-4 article p{
+    line-height: 1.6;
+}
+.cherry-box article p{ 
+    color: hsl(167, 40%, 24%);
+}
+.orange-box article p{
+    color: hsl(198, 62%, 26%);
+}
+
+.section-4 article{
+    font-family: var(--barlow);
+    text-align: center;
+    width: 47%;
+    font-weight: 600;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+
+/* ----------------------------------- */
+/*   SECTION-5 */
+
+.section-5{
+    background-color: hsla(206, 4%, 67%, 0.144);
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.section-5-header{
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.5rem;
+    color: hsl(210, 4%, 67%);
+    margin: 10rem 0 0 0;
+}
+
+.testimonial{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5rem 0rem 10rem 0rem;
+}
+
+.speaker{
+    flex-direction: column;
+}
+
+.speaker img{
+    transform: scale(0.5);
+    border-radius: 100%;
+}
+
+blockquote{
+    font-family: var(--barlow);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 70%;
+    line-height: 1.5;
+    color:hsla(210, 9%, 39%, 0.692);
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 5rem 0rem 0rem 0rem;
+}
+
+.designation{
+    font-family:  var(--barlow);
+    font-weight: 500;
+    color: hsl(200, 3%, 59%);
+    margin: 0.8rem 0rem 0rem 0rem;
+}
+
+/* ---------------------------------- */
+/*  SECTION - 6 */
+/* only display flex is used in section 6 */
+
+/* ------------------------------------- */
+
+footer{
+    background-color: hsla(170, 47%, 57%, 0.678);
+    flex-direction: column;
+    color: white;
+}
+
+.footer-logo{
+    transform: scale(1.5);
+    margin: 5rem 0rem 3rem 0rem;
+}
+
+footer ul{
+    width: 20%;
+    margin: 0 0 5rem 0;
+}
+
+footer ul li{
+    font-weight: 500;
+    font-family: var(--barlow);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: hsl(168, 34%, 41%);
+}
+
+footer ul li:hover{
+    color: white;
+}
+
+.social{
+    width: 12%;
+    margin: 0 0 4rem 0;
+}
+
+.social svg:hover{
+    cursor: pointer;
+    fill: #fff;
+}
+
