@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 0 9rem 0 8.3rem;
-    background-color: hsla(206, 4%, 67%, 0.144);
+    background-color: hsla(7, 99%, 70%, 0.05);
 }
 
 .grid{
@@ -120,6 +120,10 @@ body{
     height: 100%;
 }
 
+.hamburger{
+    display: none;
+}
+
 .nav-ul li{
     cursor: pointer;
 }
@@ -162,6 +166,10 @@ body{
     height: 100%;
 }
 
+.section-2 .egg-mobile{
+    display: none;
+}
+
 /* -------------------------------------- */
 /*  SEVTION -3 */
 
@@ -171,6 +179,10 @@ body{
 
 .section-3-left .glass{
     height: 100%;
+}
+
+.section-3 .glass-mobile{
+    display: none;
 }
 
 
@@ -228,7 +240,6 @@ body{
 
 .section-5{
     background-color: hsla(206, 4%, 67%, 0.144);
-    margin: 0rem 0rem 0rem 0rem;
 }
 
 .section-5-header{
@@ -281,6 +292,10 @@ blockquote{
 /* ---------------------------------- */
 /*  SECTION - 6 */
 /* only display flex is used in section 6 */
+
+.section-6-images-mobile{
+    display: none;
+}
 
 /* ------------------------------------- */
 
