@@ -73,7 +73,7 @@
 
   .section-1 {
     background-image: url(images/mobile/image-header.jpg);
-    background-size: contain;
+    background-size: cover;
     height: 67.4vh;
   }
   .section-1 .heading {
